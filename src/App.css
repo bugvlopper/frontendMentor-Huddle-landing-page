@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root{
+  --violet: hsl(257, 40%, 49%);
+  --softMagenta: hsl(300, 69%, 71%);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: var(--violet);
+  height: 100vh;
+  background-image: url("./images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  color: white;
+  padding: 4rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.header{
+  margin-bottom: 1rem;
+}
+.main{
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.mockups{
+  justify-self: flex-start;
+  align-self: center;
+  width: 60%;
+}
+.mockups img{
+  width: 100%;
+}
+.content{
+  width: 50%;
+  padding-left: 3rem;
+  align-self: flex-start;
+  padding-top: 3rem;
+  font-family: "Open sans";
+}
+.content p{
+  font-size: 1.1rem;
+  line-height: 2rem;
+  width: 90%;
+}
+.content button{
+  width: 200px;
+  height: 55px;
+  background-color: white;
+  border-radius: 50px;
+  border: 0;
+  box-shadow: 0 0 30px -10px black;
+  color: var(--violet);
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+.content button:hover{
+  background-color: var(--softMagenta);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+h1{
+  font-family: Poppins;
+  font-size: 2rem;
+  width: 80%;
+}
+.footer{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.footer svg{
+  fill: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid;
+  border-color: white;
+  border-radius: 50%;
+  margin-left: 1rem;
+  fill: red;
+}
+.Logo:hover{
+  border-color: var(--softMagenta);
+}
+.Logo:hover svg{
+  border-color: var(--softMagenta);
+  fill: var(--softMagenta);
+}
+
+@media only screen and (max-width: 960px) {
+  body{
+    height: auto;
+    background-image: url("./images/bg-mobile.svg");
+    background-size: 100vw;
   }
-  to {
-    transform: rotate(360deg);
+  .main{
+    flex-direction: column;
+  }
+  .content{
+    align-self: center;
+    text-align: center;
+    width: auto;
+    padding-left: 0;
+  }
+  h1{
+    width: auto;
+  }
+  .content p{
+    width: auto;
+    
+  }
+  .mockups{
+    width: auto;
+  }
+  .footer{
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+  .footer a:nth-child(1) .Logo{
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .content{
+    width: 350px;
+  }
+  h1{
+    font-size: 1.8rem;
   }
 }
