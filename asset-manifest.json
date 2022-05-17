@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/frontendMentor-Huddle-landing-page/static/css/main.9115a407.css",
+    "main.js": "/frontendMentor-Huddle-landing-page/static/js/main.f791aba8.js",
+    "static/js/787.45393f03.chunk.js": "/frontendMentor-Huddle-landing-page/static/js/787.45393f03.chunk.js",
+    "static/media/illustration-mockups.svg": "/frontendMentor-Huddle-landing-page/static/media/illustration-mockups.264994a533e88e58ad2a10b6ae6856e0.svg",
+    "static/media/logo.svg": "/frontendMentor-Huddle-landing-page/static/media/logo.2b3c07e4842b59538e846f54ed4b3891.svg",
+    "static/media/bg-desktop.svg": "/frontendMentor-Huddle-landing-page/static/media/bg-desktop.6824779f0b32ead7a24a.svg",
+    "static/media/bg-mobile.svg": "/frontendMentor-Huddle-landing-page/static/media/bg-mobile.41ba0830da0732cda559.svg",
+    "index.html": "/frontendMentor-Huddle-landing-page/index.html",
+    "main.9115a407.css.map": "/frontendMentor-Huddle-landing-page/static/css/main.9115a407.css.map",
+    "main.f791aba8.js.map": "/frontendMentor-Huddle-landing-page/static/js/main.f791aba8.js.map",
+    "787.45393f03.chunk.js.map": "/frontendMentor-Huddle-landing-page/static/js/787.45393f03.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9115a407.css",
+    "static/js/main.f791aba8.js"
+  ]
+}
